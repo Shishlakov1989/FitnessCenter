@@ -1,0 +1,23 @@
+.login {
+    color: darkslategrey;
+    text-align: center;
+}
+
+.header {
+    margin-left: 42%;
+    color: darkslategrey;
+}
+
+button {
+    z-index: 21;
+    background-color: rgb(96, 158, 158);
+}
+
+button:hover {
+    background-color: rgb(67, 91, 92);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(1, 17, 16);
+}

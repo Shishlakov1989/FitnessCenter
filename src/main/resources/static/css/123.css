@@ -1,0 +1,120 @@
+body {
+    background-color: rgb(1, 17, 16);
+    color: rgba(26, 84, 119, 1);
+    font-size: 1rem;
+}
+
+.navbar {
+    height: 10%;
+}
+
+.navbar a {
+    color: rgb(206, 196, 149);
+    text-decoration: none;
+}
+
+.menutab {
+    height: 10%;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.middle {
+    width: 70%;
+    margin: 1% auto;
+}
+
+.container {
+    display: block;
+    position: fixed;
+    top: 10%
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    margin: 0 20%;
+    background-color: rgba(255, 229, 190, 0.8);
+    padding: 0 10px;
+    /*rgb(233,210,194)*/
+}
+
+input {
+    width: 90%;
+}
+
+.filter {
+    width: 25%;
+    padding: 10px;
+}
+
+.filter input {
+    margin-right: 10px;
+}
+
+.middle {
+    align-content: center;
+    text-align: center;
+}
+
+.info {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.info input {
+    background-color: inherit;
+    font-size: 1em;
+    color: inherit;
+    border: none;
+    font-family: inherit;
+}
+
+.info input:focus {
+    border: none;
+}
+
+button, select, input {
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+button {
+    background-color: #b5e9a7;
+}
+
+.uploadFile {
+    border-radius: 8px;
+    color: inherit;
+    padding: 5px 10px;
+}
+
+td {
+    vertical-align: top;
+}
+
+.error {
+    text-align: center;
+    font-size: 0.8em;
+    color: red;
+}
+
+.abonement > input {
+    width: 30%;
+    visibility: hidden;
+    position: absolute;
+}
+
+.abonement > input + img {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.abonement > input:checked + img {
+    border: 2px solid lightcoral;
+}

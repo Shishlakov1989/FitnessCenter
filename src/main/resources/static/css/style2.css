@@ -1,0 +1,130 @@
+.center {
+    text-align: right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(96, 158, 158);
+}
+
+/*body {*/
+/*background-color: rgb(1, 17, 16);*/
+/*color: rgb(206, 196, 149);*/
+/*}*/
+
+#foto {
+    width: 180px;
+    height: 180px;
+    display: block;
+    margin: 0 auto;
+    margin-right: 0mm;
+    margin-left: 0mm;
+}
+
+.container {
+    /*width: 1170px;*/
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    padding-left: 80px;
+}
+
+table {
+    width: 100%;
+    height: auto;
+}
+
+.form-input {
+    border: none;
+    width: 100%;
+    text-align: center;
+    background-color: inherit;
+    color: inherit;
+}
+
+.form-left {
+    border: none;
+    width: 100%;
+    background-color: inherit;
+    color: inherit;
+}
+
+.product-wrapper {
+    display: block;
+    width: 100%;
+    float: left;
+    transition: width .2s;
+}
+
+@media only screen and (min-width: 450px) {
+    .product-wrapper {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .product-wrapper {
+        width: 33.333%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .product-wrapper {
+        width: 25%;
+    }
+}
+
+.product {
+    display: block;
+    border: 1px solid #b5e9a7;
+    border-radius: 3px;
+    position: relative;
+    background: #fff;
+    margin: 0 20px 20px 0;
+    text-decoration: none;
+    color: #474747;
+    z-index: 0;
+    height: 300px;
+}
+
+.products {
+    list-style: none;
+    margin: 0 -20px 0 0;
+    padding: 0;
+
+}
+
+.product-photo {
+    width: 278px;
+    display: block;
+    margin: 0 20px 0px 0;
+    position: relative;
+}
+
+.nav {
+    text-align: center;
+    width: 15%;
+    padding-left: 30px;
+    display: inline-block;
+    height: 100%;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    background-color: rgba(243, 255, 237, 0.22);
+}
+
+.nav li {
+    list-style-type: none;
+    text-align: left;
+}
+
+.middle {
+    margin: 15px 15px;
+    width: 60%;
+    display: inline-block;
+    height: 100%;
+}
