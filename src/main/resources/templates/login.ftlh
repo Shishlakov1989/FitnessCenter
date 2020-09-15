@@ -6,7 +6,7 @@
         <input type="text" name="username">
         <input type="password" name="password">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
-        <button type="submit">Войти</button>
+        <button  class="btn" type="submit">Войти</button>
     </form>
 </div>
 </@p.page>

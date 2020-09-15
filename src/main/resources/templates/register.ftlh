@@ -1,9 +1,8 @@
 <#include "blocks/security.ftlh">
 <#import "blocks/page.ftlh" as p>
 
-<@p.page "Новый посетитель">
-<div class="conteiner">
-    <h5>Карта клиента</h5>
+<@p.page "Новый сотрудник">
+    <h4>Регистрация сотрудника</h4>
     <form action="/user/add" method="post" enctype="multipart/form-data">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
         <table>
@@ -98,7 +97,6 @@
                 <td><input type="checkbox" name="admin"></td>
             </tr>
         </table>
-        <button type="submit">Добавить</button>
+        <button class="btn" type="submit">Добавить</button>
     </form>
-</div>
 </@p.page>

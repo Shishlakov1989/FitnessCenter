@@ -5,24 +5,26 @@
         <tr>
             <td width="15%"></td>
             <td width="70%">
+                <ul>
                 <#if isLogged>
-                    <a href="/">Главная</a>
-                    <a href="/customer/add">Добавить посетителя</a>
-                    <a href="/customer">Список клиентов</a>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/customer/add">Добавить посетителя</a></li>
+                    <li><a href="/customer">Список клиентов</a></li>
                     <#if isAdmin>
-                        <a href="/user">Список пользователей</a>
-                        <a href="/user/add">Добавить пользователя</a>
+                        <li><a href="/user/add">Добавить пользователя</a></li>
+                        <li><a href="/user">Список пользователей</a></li>
                     </#if>
                 <#else>
-                    <a href="/init">Создать первого пользователя</a>
+                    <li><a href="/init">Создать первого пользователя</a></li>
                 </#if>
+                </ul>
             </td>
             <td width="15%">
                 <#if isLogged>
-                    ${name}
+                    <a href="/user/edit/${user.id}" id="username">${name}</a>
                     <form action="/logout" method="post">
                         <input type="hidden" name="_csrf" value="${_csrf.token}">
-                        <button type="submit">Выйти</button>
+                        <button class="btnlink" type="submit">Выйти</button>
                     </form>
                 </#if>
             </td>

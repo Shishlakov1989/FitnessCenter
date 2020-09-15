@@ -1,7 +1,7 @@
 <#import "blocks/page.ftlh" as p>
 
 <@p.page "Страница клиента">
-        <h5>Карта клиента #${customer.subscription.id?c}</h5>
+        <h4>Карта клиента #${customer.subscription.id?c}</h4>
         <form action="/customer/edit/${customer.id?c}" method="post" enctype="multipart/form-data">
             <input type="hidden" name="_csrf" value="${_csrf.token}">
             <table class="info" border="1">
@@ -86,13 +86,13 @@
                     <td width="23%">${customer.subscription.countVisit}</td>
                 </tr>
             </table>
-            <button type="submit">Изменить</button>
+            <button class="btn" type="submit">Изменить</button>
         </form>
     <form method="post" action="/upload/${customer.id?c}" enctype="multipart/form-data">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
         <div>
             <input class="uploadFile" type="file" name="file" accept="image/*"/>
-            <button type="submit"><#if customer.photo??>Обновить<#else>Загрузить</#if></button>
+            <button class="btn" type="submit"><#if customer.photo??>Обновить<#else>Загрузить</#if></button>
         </div>
     </form>
     <div>
@@ -116,7 +116,7 @@
                             <option value="single">Разовое посещение</option>
                         </select>
                         <br/>
-                        <button type="submit">Продлить</button>
+                        <button class="btn" type="submit">Продлить</button>
                     </form>
                 </td>
             </tr>

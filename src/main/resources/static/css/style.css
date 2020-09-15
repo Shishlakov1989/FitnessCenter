@@ -1,23 +1,151 @@
-.login {
-    color: darkslategrey;
+body {
+    background-color: rgb(1, 17, 16);
+    font-size: 1rem;
+}
+
+#username {
+    color: rgba(26, 84, 119, 1);
+}
+
+.navbar {
+    height: 10%;
+}
+
+.navbar a {
+    color: rgb(206, 196, 149);
+    text-decoration: none;
+}
+
+.menutab {
+    height: 10%;
+    width: 100%;
+    vertical-align: center;
     text-align: center;
 }
 
-.header {
-    margin-left: 42%;
-    color: darkslategrey;
+.menutab li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.middle {
+    width: 25%;
+    margin: 1% auto;
+    text-align: center;
+}
+
+input{
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+}
+
+.container {
+    display: block;
+    position: fixed;
+    top: 10%
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    margin: 0 20%;
+    background-color: rgba(255, 229, 190, 0.8);
+    padding: 0 10px;
+}
+
+input {
+    width: 90%;
+}
+
+.filter {
+    width: 25%;
+    padding: 10px;
+}
+
+.filter input {
+    margin-right: 10px;
+}
+
+
+.info {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+.info input {
+    background-color: inherit;
+    font-size: 1em;
+    color: inherit;
+    border: none;
+    font-family: inherit;
+}
+
+.info input:focus {
+    border: none;
+}
+
+button, select, input {
+    border-radius: 5px;
 }
 
 button {
-    z-index: 21;
-    background-color: rgb(96, 158, 158);
+    background-color: #b5e9a7;
 }
 
-button:hover {
-    background-color: rgb(67, 91, 92);
+.uploadFile {
+    border-radius: 8px;
+    color: inherit;
+    padding: 5px 10px;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(1, 17, 16);
+td {
+    vertical-align: top;
+}
+
+.error {
+    text-align: center;
+    font-size: 0.8em;
+    color: red;
+}
+
+.abonement > input {
+    width: 30%;
+    visibility: hidden;
+    position: absolute;
+}
+
+.abonement > input + img {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+
+.abonement > input:checked + img {
+    border: 2px solid lightcoral;
+}
+
+.form td{
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.btn {
+    margin-bottom: 10px;
+    background-color: #68b374;
+    padding: 5px 15px;
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.btnlink{
+    margin-bottom: 1px;
+    background-color: #68b374;
+    padding: 1px 5px;
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }

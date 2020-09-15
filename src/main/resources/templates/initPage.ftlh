@@ -1,11 +1,11 @@
 <#include "blocks/security.ftlh">
 <#import "blocks/page.ftlh" as p>
 
-<@p.page "Директор">
-    <h4>Заполните данные о директоре</h4>
+<@p.page "Заполните данные о руководителе">
+    <h4>Заполните данные о руководителе</h4>
     <form action="/init" method="post" enctype="multipart/form-data">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
-        <table>
+        <table class="form">
             <tr>
                 <td><label>Фамилия</label></td>
                 <td>
@@ -106,6 +106,6 @@
                 </td>
             </tr>
         </table>
-        <button type="submit" tabindex="11">Записать</button>
+        <button class="btn" type="submit" tabindex="11">Записать</button>
     </form>
 </@p.page>

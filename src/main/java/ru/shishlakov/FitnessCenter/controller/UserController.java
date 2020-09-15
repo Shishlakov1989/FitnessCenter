@@ -84,8 +84,6 @@ public class UserController {
             return "userInfo";
         }
 
-//        userService.editUser(user, param);
-
         return "redirect:/user/edit/" + user.getId();
     }
 

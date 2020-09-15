@@ -1,8 +1,7 @@
 <#import "blocks/page.ftlh" as p>
 
 <@p.page "Новый посетитель">
-<div class="conteiner">
-    <h5>Карта клиента</h5>
+    <h4>Регистрация клиента</h4>
     <form action="/customer/add" method="post" enctype="multipart/form-data">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
         <table>
@@ -68,29 +67,20 @@
                 <td colspan="3">
                     <label class="abonement">
                         <input type="radio" name="subscription" value="unlimited" checked>
-                        <img src="/img/unlimit.jpg" width="15%">
+                        <img src="/img/unlimit.jpg" width="20%">
                     </label>
                     <label class="abonement">
                         <input type="radio" name="subscription" value="standart">
-                        <img src="/img/standart.jpg" width="15%">
+                        <img src="/img/standart.jpg" width="20%">
                     </label>
                     <label class="abonement">
                         <input type="radio" name="subscription" value="single">
-                        <img src="/img/single.jpg" width="15%">
+                        <img src="/img/single.jpg" width="20%">
                     </label>
-
-
-
-                <#--<select name="subscription">
-                    <option value="unlimited" selected>Безлимитный</option>
-                    <option value="standart">Стандартный</option>
-                    <option value="single">Разовое посещение</option>
-                </select>-->
                 </td>
             </tr>
 
         </table>
-        <button type="submit">Добавить</button>
+        <button class="btn"  type="submit">Добавить</button>
     </form>
-</div>
 </@p.page>

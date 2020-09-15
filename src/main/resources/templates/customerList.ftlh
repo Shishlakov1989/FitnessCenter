@@ -4,7 +4,7 @@
     <div class="filter">
         <form method="get" action="/customer">
             <input type="text" name="filter" <#if filter??>value="${filter}"</#if>>
-            <button type="submit">Найти</button>
+            <button  class="btn"  type="submit">Найти</button>
         </form>
     </div>
     <div>

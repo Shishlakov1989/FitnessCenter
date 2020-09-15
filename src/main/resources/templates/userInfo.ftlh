@@ -1,7 +1,7 @@
 <#import "blocks/page.ftlh" as p>
 
-<@p.page "Страница клиента">
-    <h5>Редактирование пользователя #${user.id?c}</h5>
+<@p.page "Страница сотрудника">
+    <h4>Редактирование пользователя #${user.id?c}</h4>
     <form action="/user/edit/${user.id?c}" method="post" enctype="multipart/form-data">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
         <table class="info" border="1">

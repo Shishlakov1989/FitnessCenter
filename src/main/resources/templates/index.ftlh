@@ -1,10 +1,10 @@
 <#import "blocks/page.ftlh" as p>
 
-<@p.page "Main page">
+<@p.page "Главная страница">
     <div class="filter">
         <form action="/" method="get">
             <input type="text" name="subscription">
-            <button type="submit">Найти</button>
+            <button class="btn"  type="submit">Найти</button>
         </form>
     </div>
     <#if subscription??>
